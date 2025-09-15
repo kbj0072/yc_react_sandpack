@@ -4,7 +4,7 @@
     "hidden": false
   },
   "/index.html": {
-    "code": "<div id=\"root\"></div>\r\n",
+    "code": "<div id=\"root\"></div>\r\n<script>\r\n  (function () {\r\n    const send = () => {\r\n      const h = Math.max(\r\n        document.documentElement.scrollHeight,\r\n        document.body.scrollHeight\r\n      );\r\n      parent.postMessage({ type: \"yc-sp/size\", height: h }, \"*\");\r\n    };\r\n    new ResizeObserver(send).observe(document.body);\r\n    window.addEventListener(\"load\", send);\r\n    setTimeout(send, 300); // 초기 지연 로딩 대비\r\n  })();\r\n</script>\r\n",
     "hidden": true
   },
   "/index.js": {
