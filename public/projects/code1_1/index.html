@@ -1,1 +1,15 @@
 <div id="root"></div>
+<script>
+  (function () {
+    const send = () => {
+      const h = Math.max(
+        document.documentElement.scrollHeight,
+        document.body.scrollHeight
+      );
+      parent.postMessage({ type: "yc-sp/size", height: h }, "*");
+    };
+    new ResizeObserver(send).observe(document.body);
+    window.addEventListener("load", send);
+    setTimeout(send, 300); // 초기 지연 로딩 대비
+  })();
+</script>
