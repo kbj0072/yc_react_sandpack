@@ -26,7 +26,7 @@ export default function Project() {
   }, [id]);
 
   return (
-    <div className="container" style={{ height: "100%" }}>
+    <div className="container" style={{ height: "100%", maxWidth: "100%" }}>
       {/* <header style={{ display: "flex", alignItems: "center", gap: 12 }}>
         <Link to="/">← Back</Link>
         <h2 style={{ margin: 0 }}>Project: {id}</h2>
