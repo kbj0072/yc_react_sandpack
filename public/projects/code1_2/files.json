@@ -1,0 +1,18 @@
+{
+  "/App.js": {
+    "code": "import React from \"react\";\r\n\r\nexport default function App() {\r\n  const [n, setN] = React.useState(0);\r\n  return (\r\n    <main style={{ padding: 20 }}>\r\n      <h1>Counter</h1>\r\n      <p>{n}</p>\r\n      <button onClick={() => setN(n + 1)}>+1</button>\r\n    </main>\r\n  );\r\n}\r\n",
+    "hidden": false
+  },
+  "/index.html": {
+    "code": "<div id=\"root\"></div>\r\n",
+    "hidden": true
+  },
+  "/index.js": {
+    "code": "import { createRoot } from \"react-dom/client\";\r\nimport App from \"./App.js\";\r\n\r\ncreateRoot(document.getElementById(\"root\")).render(<App />);\r\n",
+    "hidden": true
+  },
+  "/package.json": {
+    "code": "{\n  \"name\": \"code1_2\",\n  \"version\": \"1.0.0\",\n  \"main\": \"/index.js\",\n  \"dependencies\": {\n    \"react\": \"19.0.0\",\n    \"react-dom\": \"19.0.0\"\n  }\n}",
+    "hidden": true
+  }
+}

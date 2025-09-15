@@ -1,0 +1,18 @@
+{
+  "/App.js": {
+    "code": "export default function App() {\r\n  return <h1>Hello React!</h1>;\r\n}\r\n",
+    "hidden": false
+  },
+  "/index.html": {
+    "code": "<div id=\"root\"></div>\r\n",
+    "hidden": true
+  },
+  "/index.js": {
+    "code": "import { createRoot } from \"react-dom/client\";\r\nimport App from \"./App.js\";\r\n\r\ncreateRoot(document.getElementById(\"root\")).render(<App />);\r\n",
+    "hidden": true
+  },
+  "/package.json": {
+    "code": "{\n  \"name\": \"code1_1\",\n  \"version\": \"1.0.0\",\n  \"main\": \"/index.js\",\n  \"dependencies\": {\n    \"react\": \"19.0.0\",\n    \"react-dom\": \"19.0.0\"\n  }\n}",
+    "hidden": true
+  }
+}
